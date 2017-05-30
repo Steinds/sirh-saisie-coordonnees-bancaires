@@ -1,0 +1,62 @@
+<h1>SGP - Saisie des coordonnées bancaire </h1>
+<div class="row">    
+    <div class="col-md-6">
+    <table class="table">
+<thead>
+    <tr>
+    <th> Matricule </th>
+    <th> Nom </th>
+    <th> Prenom </th>
+    </tr>
+</thead>
+<tbody ng-repeat="collab in $ctrl.collaborateurs track by $index" ng-click="$ctrl.onSelect(collab.matricule)" ng-class="{selected: collab.matricule === $ctrl.selectMatricule">
+    <tr>
+   <td> {{ collab.matricule }} </td>
+   <td> {{ collab.nom }} </td>
+   <td> {{ collab.prenom }} </td>
+    </tr>
+    </tbody>
+</table>
+    </div>
+    <form class="form-horizontal col-md-6">
+<fieldset>
+<legend>Banque :</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">Banque</label>  
+  <div class="col-md-4">
+  <input id="" name="" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">IBAN</label>  
+  <div class="col-md-4">
+  <input id="" name="" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">BIC</label>  
+  <div class="col-md-4">
+  <input id="" name="" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for=""></label>
+  <div class="col-md-4">
+    <button id="" name="" class="btn btn-warning">Sauvegarder</button>
+  </div>
+</div>
+</fieldset>
+</form>
+</div>
+
