@@ -1,5 +1,6 @@
 const API_URL = 'http://localhost:8080/sgp/api/collaborateurs'
 
+
 export class BanqueService {
   constructor ($http, $q) {
     this.$http = $http
